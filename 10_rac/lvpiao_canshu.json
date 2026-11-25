@@ -1,0 +1,22 @@
+{
+  "_说明": "community 端绿票账本的运行参数。票面 schema 与 personal 相同（lvpiao/2），四外键同名字段；本端只采集，不承担写入闸。",
+  "schema": "lvpiao/2",
+  "ledger": "check_lvpiao.jsonl",
+  "_ledger_note": "真账：每次 check 实跑由 wrapper 追加一张票；票面记 rc／[结论] 行／out 及其 sha256／argv／pid，另含 run_id／op_id／rule_id／error_code 四键。",
+  "rtest_ledger": "check_lvpiao_rtest.jsonl",
+  "_rtest_ledger_note": "反向测试专用账本：只有显式声明 AOS_CHECK_LEDGER=rtest 才写这里（source=rtest），真账不收测试票。",
+  "legacy_archive": "check_lvpiao_legacy.jsonl",
+  "_legacy_archive_note": "老票整本归档件（本端起链即空账，归档件暂不存在；有归档时字节不动、不删行）。",
+  "legacy_boundary": "",
+  "_legacy_boundary_note": "老票与新链的分界时刻；空串＝尚未归档。",
+  "legacy_reason": "",
+  "_legacy_reason_note": "归档原因；空串＝尚未归档。",
+  "chain_seed": "LV2-GENESIS-community-261109",
+  "_chain_seed_note": "哈希链固定起点种子：genesis 行与首票 prev 都指向它。改种子＝旧链作废。",
+  "max_age_seconds": 900,
+  "_max_age_note": "只作状态展示口径（--status）；本端没有 require() 写入闸，不做领票判龄。",
+  "window_cap_seconds": 900,
+  "_window_cap_note": "上限口径，与 personal 同值；本端不领票，故不参与放行判断。",
+  "enforce_since": "",
+  "_enforce_since_note": "本端无写入闸，恒为空：只采集不拦。"
+}

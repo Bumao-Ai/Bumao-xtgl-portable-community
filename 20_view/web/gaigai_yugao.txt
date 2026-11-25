@@ -1,0 +1,16 @@
+# 核心件改动预告（改前必落一行；格式：时间 | 改哪几件 | 为什么 | 预计多久 | 影响面 | 执行方）
+# 由 kernel/suoding.py unlock 自动追加；手写行同样有效，供 kernel/shaobing.py 与 B29/B48 判据核对。
+2026-11-07 23:40:00 | z11.json,qiangzhi.py,BumaoXTGL_Community_v01.py,gates_decl.json,jiancha_map.json | 新增 B29 核心件改动预告闸（要求改动人事先写明改动范围） | 60 | 基线 | 本线（内核/规则）
+2026-11-07 23:15:07 | favicon.png | 反向用例：造「改了但没预告」的样本后补预告 | 60 | 无 | 本线（验证B29）
+2026-11-08 07:46:52 | kernelsync.py | W7 沿革说明改新名（Bumago→Bumao），并补记纸面线 07:37:54 的 W7 白名单改动；随后重算 core_manifest.json | 30 | 无 | 我方代修（Q007）
+2026-11-08 07:58:28 | kernelsync.py | 前端 Q015 收口、Q007 收尾后统一登记：index.html 转差异上限白名单，setup.html 改为 i18n 实证理由，tutorial／i18n／modules／design_tokens 逐件归位，同步重写 4 处过期文案；不改 Q007 的 W5／W7 表述，改后三端重算清单 | 60 | 无 | 我方代修（登记收口）
+2026-11-08 08:17:02 | index.html,i18n.js | Q016 英文图收口：record/data 两页数据区外中文归零（表头、服务端说明句、容器标签进翻译），只动取词与文案，布局配色不动 | 60 | 无 | 我方代修（Q016）
+2026-11-08 08:18:19 | index.html,i18n.js（本条作废） | Q016 更正：另两端 i18n 无 DATA_SEL 机制，本轮解冻只落个人端；先前预告未执行，两件已还原 | 0 | 无 | 我方代修（Q016）
+2026-11-07 22:46:45 | design_tokens.json | 实际改动时间 2026-11-07 22:46:45（第 10 号授权美化窗口 22:37—22:57，新增 8 个彩虹色值）；补记时间 2026-11-08 08:26:28；本行事后补记，非事前预告 | 60 | 无 | 执行端补记（B29 甲类）
+2026-11-08 08:51:56 | index.html,i18n.js,xtgl_core.py | Q017 三端加闸门状态面：新增 /api/gates 只读各端 check 日志（绿/红/红项编号与原因/取数时间），overview 04 卡内加三行；复用既有 .hint 与卡片样式，不加配色不改栅格；中英走词条 | 90 | 无 | 我方代修（Q017）
+2026-11-08 11:43:04 | setup.html,tutorial.html,xtgl_core.py | A13/B15/B16 补授权与留痕：setup/tutorial 补同 index 的字号增强块（--fs-zoom 1.12），xtgl_core 接基线准入过滤；本条为事后补预告，审批行与同哈希改前件已同轮补齐 | 60 | 无 | 我方代修（Q011／Q012）
+2026-11-08 11:59:29 | index.html,tutorial.html,i18n.js,xtgl_core.py | 三端中文称谓统一：personal→私人版、community→个人版、minimal→社区版；称谓收进 web_config.json 的 labels（可配置层），代码与 /api 只按英文标识取词；英文端名与目录路径不动 | 60 | 三端前端渲染与 /api 展示文案（不改接口字段与业务逻辑） | 本线（我方代修）
+2026-11-08 17:45:00 | serve.py,xtgl_core.py | 运行期编码收口：入口与 Out 输出路径显式 reconfigure(utf-8, errors=replace)，修控制台标题乱码；只动输出编码，不改逻辑、不文案、不布局 | 30 | 无 | 本线（紧急修 0.00.1）
+2026-11-09 10:06:49 | xtgl_core.py | 事后补预告：do_POST 入口前置＋finally 事后接执行中监管（默认 off，不 import 监管包）；按用户要求先保功能正常、再搭载最新内核 | 60 | 20_view/web 写接口 | 执行端补记（B29 甲类）
+2026-11-09 10:48:23 | index.html | 事后补预告：只改 logKey 一处分组目录名（任务目录→40_renwu），不动判定逻辑、接口与配色；改动发生于该时刻，本行为补记 | 60 | 20_view/web 控制台分组键 | 执行端补记（B29 甲类）
+2026-11-23 22:06:08 | xtgl_core.py | 事后补预告（B29 甲类）：D8 jiancha→runtime_guard 改名连带，xtgl_core.py 内检查链引用名同步；改动发生于该时刻，本行为事后补记、非事前预告 | 60 | 20_view/web | 执行端补记（B29 甲类）

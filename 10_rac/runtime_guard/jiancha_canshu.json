@@ -1,0 +1,27 @@
+{
+  "_说明": "community 端执行中监管参数件。路径相对本包解析；不签票、不写票本。",
+  "schema": "act/1",
+  "env": "",
+  "chain_seed": "ACT-GENESIS-community-v0.2-261109",
+  "ledger": "actions.jsonl",
+  "baseline_dir": "baseline",
+  "ticket_ledger": "",
+  "_ticket_ledger_note": "本端已有 check 票本（10_rac/check_lvpiao.jsonl，lvpiao/2）；运行目录随项目走、lab_root 非区根，本层不挂票，票证在 audit 里按 op_id 关联；force_ticket=false，动作票面 tid 留空。",
+  "force_ticket": false,
+  "watch_scope": ".",
+  "denied_zones": ["_frozen", "90_lishi", "00_meta_denied", ".git", "secret"],
+  "action_types": [
+    "order_begin", "file_read", "file_write", "cmd_exec", "batch_exec",
+    "periodic_check", "recovery", "resume", "halt", "done"
+  ],
+  "halt_exit_code": 3,
+  "reverse_case_min": 10,
+  "order_path": "order.json",
+  "run_dir": "jiancha_run",
+  "qingli": {
+    "enabled": true,
+    "min_age_hours": 1,
+    "keep_evidence": 10,
+    "max_total_mb": 400
+  }
+}

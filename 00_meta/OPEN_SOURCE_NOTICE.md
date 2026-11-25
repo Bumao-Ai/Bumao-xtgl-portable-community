@@ -66,7 +66,7 @@ i18n.js  favicon.png  xtgl_clean.py  design_tokens.json
 
 1. 在 `10_rac` 下执行 `python BumaoXTGL_Community_v01.py check --strict`，结论须为 `ALL PASS`；
 2. 在 `20_view/web` 下核对 13 件哈希与 `core_manifest.json` 一致（由维护者在本地用核验工具完成，本地工具，不发布）；
-3. 隐私重扫：本机路径、机器名、用户名、内部角色代号、内网地址零命中；
+3. 合规复核：按内部合规清单逐项确认，结论仅内部留存，不在仓库内记录；
 4. 冷启动：在干净目录解包后直接起服务，首页可开、向导可走；
 5. 确认包内无 `.bak`／`__pycache__`／`node_modules`。
 

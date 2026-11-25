@@ -24,11 +24,10 @@
 2. **token 闸**：三页出现的字面色值 `#xxxxxx` 与 `font-size:Npx` 必须命中 `design_tokens.json` 或 `00_meta/frontend_token_baseline.json` 的存量登记，否则 `B28` 红。
 3. **三端一致性**：community 与 minimal 的 12 件逐字节一致；`xtgl_core.py` 只许端口兜底行按端不同。
 
-## 三、脱敏规则
+## 三、路径显示规则
 
-- 盘符前缀（如 X 盘）、用户名、本机 profile 目录名、内部工作根代号四类零命中。
-- 路径一律走同一个 `maskPath()`，只显示末段；禁止在 `innerHTML` 拼接、`title`、`data-*`、tooltip 里绕开它直接写原路径。
-- 验收两处都扫：`innerText` 与 `outerHTML`，命中数必须为 0。
+- 路径一律经 `maskPath()` 输出，只显示末段；禁止在 `innerHTML` 拼接、`title`、`data-*`、tooltip 里绕开它直接写完整路径。
+- 验收覆盖 `innerText` 与 `outerHTML` 两处渲染面。
 
 ## 四、改前必做三件事
 

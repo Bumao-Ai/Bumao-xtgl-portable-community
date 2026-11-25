@@ -1,7 +1,7 @@
 # community body pack  20261125-121058
 # files=122  bytes=1331038
 # 条目: <SHA256 8位分组>  <字节数>  <相对路径>；本清单反映当前发行副本实际哈希
-56cbb9aa 03630345 52510870 d0ca18d7 5eac8d98 2ab9b166 ead3931f de69d352 4202 00_meta/OPEN_SOURCE_NOTICE.md
+c674dfff 8393818e a5557184 f4bbf826 369dc6ed a3917b61 a2f98e2b b2f29e34 4121 00_meta/OPEN_SOURCE_NOTICE.md
 9ba55b3e 39b9f04c 2f09f205 bacbf34d 422af0af c69924b6 05a1f6d9 1384d61e  4717  00_meta/XINSHOU-ZHINAN.txt
 aa266ecf f2702d54 387cc142 0bf4f776 29d252d3 691a13e3 c5c818ce d8be4dbf  300  00_meta/feature_packs/f01_jieru.json
 6c6d18cd 8210ced4 de8d9186 8c58754a 6b08ec5c a8542818 d34865c6 926b2e5d  295  00_meta/feature_packs/f02_lishi.json
@@ -104,7 +104,7 @@ f9b76b75 230fba86 18a7aab8 83c1d401 94ec2f08 4c436130 6a924d05 066c8dfd  16360  
 4e7e72d1 c1db2e29 81cfc187 03ae6137 22f21fda ba81a666 92b3c0d7 fc1ecbc7  12713  20_view/web/module_check.py
 e0729773 4e506f0f be343b44 4955a2ac da0e9cc9 a0955468 7cf28c89 f2388727  10888  20_view/web/modules.json
 e3b0c442 98fc1c14 9afbf4c8 996fb924 27ae41e4 649b934c a495991b 7852b855  0  20_view/web/python_path.txt
-309cb41b 70d3c38c 3cf7d6dc d0e6fc9b fc635715 a34c8bf3 2a367780 76f1ce19  3144  20_view/web/qian_duan_xieyi.md
+d453cbb3 b8c7a020 828b4577 29e413a6 e21dc8aa 4676c59b c8b77212 2cf79978 3025 20_view/web/qian_duan_xieyi.md
 420b60ed f6805c17 777688d3 9a237102 09cabd41 34336733 273e072f 66307117  3162  20_view/web/qidong_kongzhitai.bat
 915d6b0d 636438ea 3f565e08 ce5fb21d c88fa978 a6f1e70e ed135066 8635d7d1  1648  20_view/web/serve.py
 ef08c0d4 0be240af 44fcd7f7 1f1adc4e 07eda856 6a9712de 9b656f95 608977c6  16166  20_view/web/setup.html
@@ -121,5 +121,5 @@ e5433d70 594eb182 e8b3fa48 bdf84472 f5fbae4f f3f4ad96 daa752c6 81e4e2ea  14291  
 180ab2a1 86c91b04 ad3151e2 22aa998e 1222052d 8de43024 16c9456c fee06c14  11336  LICENSE
 d353869e fb827103 29873b28 1413c540 a9b6e493 d7044cc9 ba5c1354 291ffe8a  131  NOTICE
 ed226ad6 e48050e9 516b2896 57d682ad bf37e187 2ca7b7bf 1fa3c454 9eb9ee17  4469  README-HX.txt
-461ebd4e 076e646f e61043a9 ea99c278 d793012d 4f121b05 f301266c b3b826a5 1807 README.md
+7cfebc66 39fd3893 2d6a941a c9d651b9 4a8491a9 9ab26bbb 50174683 c7d6bfa0 2453 README.md
 edb41a8b 04540850 106fa415 53cf9c02 9947d217 f219f97e 2aef32e8 6f13f4ff  4115  TRADEMARK.md
